@@ -7,39 +7,39 @@ public class KanaAppraiser
 {
     // Character set lower/upper bound definitions
     //// Bounds for Hiragana
-    public static final char ZENKAKU_HIRAGANA_FIRST = 'ぁ';             // U+3041
-    public static final char ZENKAKU_HIRAGANA_LAST_FOR_CONVERT  = 'ん'; // U+3093
-    public static final char ZENKAKU_HIRAGANA_LAST  = 'ゖ';             // U+3096
+    public static final char ZENKAKU_HIRAGANA_FIRST = '???';             // U+3041
+    public static final char ZENKAKU_HIRAGANA_LAST_FOR_CONVERT  = '???'; // U+3093
+    public static final char ZENKAKU_HIRAGANA_LAST  = '???';             // U+3096
 
 
     //// Bounds for Katakana
-    public static final char HANKAKU_KATAKANA_FIRST = 'ｦ';              // U+FF66
-    public static final char HANKAKU_KATAKANA_LAST  = 'ﾝ';              // U+FF9D
+    public static final char HANKAKU_KATAKANA_FIRST = '???';              // U+FF66
+    public static final char HANKAKU_KATAKANA_LAST  = '???';              // U+FF9D
 
-    public static final char ZENKAKU_KATAKANA_FIRST = 'ァ';             // U+30A1
-    public static final char ZENKAKU_KATAKANA_LAST_FOR_CONVERT  = 'ン'; // U+30F3
-    public static final char ZENKAKU_KATAKANA_LAST  = 'ヺ';             // U+30FA
+    public static final char ZENKAKU_KATAKANA_FIRST = '???';             // U+30A1
+    public static final char ZENKAKU_KATAKANA_LAST_FOR_CONVERT  = '???'; // U+30F3
+    public static final char ZENKAKU_KATAKANA_LAST  = '???';             // U+30FA
 
 
     //// Bounds for Punctuation (kutoten)
-    public static final char HANKAKU_PUNCTUATION_FIRST  = '｡';          // U+FF61
-    public static final char HANKAKU_PUNCTUATION_LAST   = 'ﾟ';          // U+FF9F
-    public static final char HANKAKU_PUNCTUATION_ONBIKI = 'ｰ';           // U+FF70
+    public static final char HANKAKU_PUNCTUATION_FIRST  = '???';          // U+FF61
+    public static final char HANKAKU_PUNCTUATION_LAST   = '???';          // U+FF9F
+    public static final char HANKAKU_PUNCTUATION_ONBIKI = '???';           // U+FF70
 
-    public static final char ZENKAKU_PUNCTUATION_FIRST    = '、';       // U+3001
-    public static final char ZENKAKU_PUNCTUATION_LAST     = '〜';       // U+301C
-    public static final char ZENKAKU_PUNCTUATION_HG_FIRST = '゛';       // U+309B
-    public static final char ZENKAKU_PUNCTUATION_HG_LAST  = 'ゞ';       // U+309E
-    public static final char ZENKAKU_PUNCTUATION_KK_FIRST = '・';       // U+30FB
-    public static final char ZENKAKU_PUNCTUATION_KK_LAST  = 'ヾ';       // U+30FE
+    public static final char ZENKAKU_PUNCTUATION_FIRST    = '???';       // U+3001
+    public static final char ZENKAKU_PUNCTUATION_LAST     = '???';       // U+301C
+    public static final char ZENKAKU_PUNCTUATION_HG_FIRST = '???';       // U+309B
+    public static final char ZENKAKU_PUNCTUATION_HG_LAST  = '???';       // U+309E
+    public static final char ZENKAKU_PUNCTUATION_KK_FIRST = '???';       // U+30FB
+    public static final char ZENKAKU_PUNCTUATION_KK_LAST  = '???';       // U+30FE
 
 
     //// Bounds for Numeric
     public static final char HANKAKU_NUMBER_FIRST = '0';                // U+0030
     public static final char HANKAKU_NUMBER_LAST  = '9';                // U+0039
 
-    public static final char ZENKAKU_NUMBER_FIRST = '０';               // U+FF10
-    public static final char ZENKAKU_NUMBER_LAST  = '９';               // U+FF19
+    public static final char ZENKAKU_NUMBER_FIRST = '???';               // U+FF10
+    public static final char ZENKAKU_NUMBER_LAST  = '???';               // U+FF19
 
 
     //// Bounds for Alphabetic
@@ -48,10 +48,10 @@ public class KanaAppraiser
     public static final char HANKAKU_LETTER_LOWER_FIRST = 'a';          // U+0061
     public static final char HANKAKU_LETTER_LOWER_LAST  = 'z';          // U+007A
 
-    public static final char ZENKAKU_LETTER_UPPER_FIRST = 'Ａ';         // U+FF21
-    public static final char ZENKAKU_LETTER_UPPER_LAST  = 'Ｚ';         // U+FF3A
-    public static final char ZENKAKU_LETTER_LOWER_FIRST = 'ａ';         // U+FF41
-    public static final char ZENKAKU_LETTER_LOWER_LAST  = 'ｚ';         // U+FF5A
+    public static final char ZENKAKU_LETTER_UPPER_FIRST = '???';         // U+FF21
+    public static final char ZENKAKU_LETTER_UPPER_LAST  = '???';         // U+FF3A
+    public static final char ZENKAKU_LETTER_LOWER_FIRST = '???';         // U+FF41
+    public static final char ZENKAKU_LETTER_LOWER_LAST  = '???';         // U+FF5A
 
 
     // Bounds for All Alphanumeric and Symbol ASCII
@@ -59,9 +59,9 @@ public class KanaAppraiser
     public static final char HANKAKU_ASCII_FIRST = '!';                 // U+0021
     public static final char HANKAKU_ASCII_LAST  = '~';                 // U+007E
 
-    public static final char ZENKAKU_SPACE = '　';                      // U+3000
-    public static final char ZENKAKU_ASCII_FIRST = '！';                // U+FF01
-    public static final char ZENKAKU_ASCII_LAST  = '～';                // U+FF5E
+    public static final char ZENKAKU_SPACE = '???';                      // U+3000
+    public static final char ZENKAKU_ASCII_FIRST = '???';                // U+FF01
+    public static final char ZENKAKU_ASCII_LAST  = '???';                // U+FF5E
 
 
     //{{{ boolean isZenkakuHiragana(char)
@@ -81,6 +81,17 @@ public class KanaAppraiser
     {
         if(eval_char >= ZENKAKU_HIRAGANA_FIRST
         && eval_char <= ZENKAKU_HIRAGANA_LAST_FOR_CONVERT) {
+          
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
+             System.out.println("Code issue added");
             return true;
         }
         return false;
