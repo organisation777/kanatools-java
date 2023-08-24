@@ -80,8 +80,12 @@ public class KanaConverter
             // Do not glue hankaku katakana diacritic symbols when converting to zenkaku.
             // Use with 'K' or 'H'
             do_collapse_on_hankaku_diacritic = false;
+           System.out.println("adding code issue");
         }
 
+        public void sample(){
+           System.out.println("copied");
+        }
         int char_count = original_string.length();
         StringBuffer new_string = new StringBuffer();
         int i = 0;
