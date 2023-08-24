@@ -85,6 +85,8 @@ public class KanaConverter
 
         public void sample(){
            System.out.println("copied");
+           System.out.println("copied"); 
+         
         }
         int char_count = original_string.length();
         StringBuffer new_string = new StringBuffer();
